@@ -1,0 +1,77 @@
+<main>
+  <div class="table-container">
+    <table stickyTable>
+      <tr>
+        <th sticky>Company</th>
+        <th sticky>Manager</th>
+        <th>Employees</th>
+        <th>Contractors</th>
+        <th>Jobs</th>
+        <th>Contracts</th>
+        <th>Vacancy</th>
+        <th>Offices</th>
+      </tr>
+      <ng-container *ngFor="let item of data">
+        <tr>
+          <td sticky style="min-width:200px">{{ item.company }}</td>
+          <td sticky>{{ item?.manager }}</td>
+          <td>
+            {{ item?.employees }}
+          </td>
+          <td>
+            {{ item?.contractors }}
+          </td>
+          <td>
+            {{ item?.employees }}
+          </td>
+          <td>
+            {{ item?.contractors }}
+          </td>
+          <td>
+            {{ item?.employees }}
+          </td>
+          <td>
+            {{ item?.contractors }}
+          </td>
+        </tr>
+      </ng-container>
+    </table>
+  </div>
+</main>
+
+<table stickyTable>
+  <tr>
+    <th sticky>Company</th>
+    <th sticky>Manager</th>
+    <th>Employees</th>
+    <th>Contractors</th>
+    <th>Jobs</th>
+    <th>Contracts</th>
+    <th>Vacancy</th>
+    <th>Offices</th>
+  </tr>
+  <ng-container *ngFor="let item of data">
+    <tr>
+      <td sticky style="min-width:200px">{{ item.company }}</td>
+      <td sticky>{{ item?.manager }}</td>
+      <td>
+        {{ item?.employees }}
+      </td>
+      <td>
+        {{ item?.contractors }}
+      </td>
+      <td>
+        {{ item?.employees }}
+      </td>
+      <td>
+        {{ item?.contractors }}
+      </td>
+      <td>
+        {{ item?.employees }}
+      </td>
+      <td>
+        {{ item?.contractors }}
+      </td>
+    </tr>
+  </ng-container>
+</table>
